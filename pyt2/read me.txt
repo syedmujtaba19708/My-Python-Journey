@@ -1,0 +1,65 @@
+# Python Fundamentals & Practice Exercises
+
+Welcome! This repository/documentation contains two core Python scripts designed to take you from understanding the absolute basics of Python variables and operators to applying them through practical mini-programs.
+
+---
+
+## 📂 File Structure Overview
+
+1. **`pytmain.py`** — The conceptual guide covering Python syntax, data types, variable naming rules, operators, type casting, and handling user input.
+2. **`pytside.py`** — A collection of hands-on practice programs applying the concepts learned in `pytmain` (e.g., calculations, remainders, type checking, and comparisons).
+
+---
+
+## 🚀 Part 1: Core Concepts (`pytmain`)
+
+The `pytmain` script introduces the foundational building blocks of Python:
+
+### 1. Variables & Data Types
+Variables act as containers to store data values. Python automatically detects data types based on the assigned value:
+* **Integer (`int`)**: Whole numbers (e.g., `age = 22`)
+* **Float (`float`)**: Decimal numbers (e.g., `salary = 50000.50`)
+* **String (`str`)**: Text enclosed in quotes (e.g., `name = "Mujtaba"`)
+* **Boolean (`bool`)**: Truth values (`True` or `False`)
+* **None Type (`NoneType`)**: Represents the absence of a value (`none_variable = None`)
+
+### 2. Variable Naming Rules
+* Can contain letters, numbers, and underscores (`_`).
+* **Cannot** start with a number.
+* Case-sensitive (`myVariable` and `myvariable` are different).
+* Cannot use Python reserved keywords (`if`, `else`, `while`, `for`, etc.).
+* *Best Practice:* Use descriptive, meaningful names (snake_case is preferred in Python, e.g., `my_variable`).
+
+### 3. Operators
+* **Arithmetic Operators**: Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`), Modulus (`%`), Exponentiation (`**`), and Floor Division (`//`).
+* **Comparison Operators**: Equal to (`==`), Not equal to (`!=`), Greater than (`>`), Less than (`<`), Greater than or equal to (`>=`), Less than or equal to (`<=`).
+* **Logical Operators**: `and`, `or`, `not` (used to combine conditional statements).
+* **Assignment Operators**: Basic assignment (`=`) and shorthand operators (`+=`, `-=`, `*=`, `/=`).
+
+### 4. Type Casting & User Input
+* **Type Checking**: Use `type(variable)` to find the data type of any variable.
+* **Type Conversion**: Convert between types using `int()`, `float()`, and `str()`. *(Note: Converting a float with decimals to an int truncates the decimal part).*
+* **User Input**: The `input()` function captures user input **strictly as a string**. To perform calculations, it must be cast to an integer or float (e.g., `int(input("..."))`).
+
+---
+
+## 💡 Part 2: Practice Programs (`pytside`)
+
+The `pytside` script puts theory into practice with 6 hands-on mini-programs:
+
+1. **Sum of Two Numbers**: Takes two integer inputs from the user and calculates their sum.
+2. **Remainder Calculator**: Takes a number from the user and computes the remainder when divided by `2` using the modulus operator (`%`).
+3. **Input Type Checker**: Demonstrates that the `input()` function returns data as a `<class 'str'>`.
+4. **Value Comparison**: Evaluates whether the first user-entered number (`a`) is greater than the second (`b`).
+5. **Average Calculator**: Computes and prints the average of the two user-entered numbers.
+6. **Square Calculator**: Computes the square of a number using the exponentiation operator (`**`).
+
+---
+
+## 🛠️ How to Run the Scripts
+
+Make sure you have [Python installed](https://www.python.org/) on your system, then run either script via your terminal or command prompt:
+
+```bash
+python pytmain.py
+python pytside.py
