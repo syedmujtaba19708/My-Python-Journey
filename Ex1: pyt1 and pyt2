@@ -1,0 +1,120 @@
+This is my attempt 1 of solving the programming assignment for my own practice which I really hope I do, I will continue to solve simple assignments like these for the next three days so that I can consider done with the very basics. 
+Question1: "Bio Card Generator: Write a program that asks the user for their first name, age, and
+city, and then prints a single formatted sentence introducing them."
+code:
+name=input("Enter your first name:")
+age=int(input("Enter your age:"))
+city=input("Enter your city:")
+print("Good evening,", name, " I hope you are doing good!", " I see that you are ", age," years old. How is the weather in ", city, ": ")
+reply=input()
+.
+Question 2: Rectangle Calculator: Write a program that takes the length and width of a rectangle
+from the user (as floats), then calculates and prints both its Area and Perimeter.
+code:
+length= int(input("Enter the length of the rectangle: "))
+width= int(input("Enter the width of the rectangle: "))
+print(" Area of this rectangle is: ", length * width)
+print(" Perimeter of this rectangle is: ", 2 * (length + width) )
+.
+Question 3: Data Type Inspector: Create a variable with an integer, a float, a string, and a boolean.
+Print each variable's value along with its exact data type using type().
+.
+code:
+a = int(1) #This is to make sure that the value is not stored as a str type but as an int type
+b = float(2.7) #This is to make sure that the value is not stored as a str type but as a float type
+c = "string123"
+d = bool(True)#This is to make sure that the value is not stored as a str type but as a Bool type
+print(" This is an integer: ", a)
+print(" This is a float: ", b)
+print(" This is a string: ", c)
+print(" This is a Boolean value: ", d)
+.
+Question 4: Even or Odd Checker: Take an integer input from the user. Use the modulus operator
+(%) to check if the number is even or odd, and print the result (e.g., "Is the number
+even? True")
+.
+code:
+number = int(input("Enter a number: "))
+print(" Is the number Even? ", number%2==0) #This will return a Boolean value of true or false
+.
+Question 5: Simple Tip Calculator: Ask the user for their total bill amount (float) and the tip
+percentage they want to leave (e.g., 15 for 15%). Calculate the tip amount and the final
+total, then display them cleanly.
+.
+code:
+bill = int(input("Enter bill amount: "))
+tip = int(input(" Enter the tip you want to give: "))
+tip = tip/100
+total = tip * bill
+print("Your total bill with tip included is: ", total)
+.
+Question 6: Password Validator Length: Take a password string from the user. Use comparison
+operators to check if the length of the string is greater than or equal to 8 characters, and
+print whether it meets the minimum length requirement (True or False).
+.
+code: 
+password = input("Enter your password: ")
+print("Your password is valid? ", len(password)>=8)
+.
+Question 7: Age & Employment Eligibility Check: Write a program that takes a user's age and a
+boolean value representing whether they have a university degree. Using logical
+operators (and, or, not), check and print whether they qualify for a job program that
+requires:
+○ Age to be greater than 18 and less than 35.
+○ Or having a university degree regardless of age.
+.
+code: 
+age = int(input("Enter your age: "))
+degree = bool(input("Do you have a degree? True/False" )
+print("You can do the job? ", (age>=18 & age<=35) | (degree==True) )
+.
+Question 8: The Broken Cash Register: A user types in a price as a string (e.g., "45.50"). Write a
+script that converts the input, adds a fixed 5% tax, and prints out the final price using
+arithmetic and float casting.
+.
+code:
+.
+price = input("Price to be entered here: ")
+fixprice = float(price)
+total = fixprice + (fixprice * 0.5)
+print("Final price is: ", total)
+.
+Mini Project: Project: "Smart Personal Expense & Savings Tracker (CLI Edition)"
+Scenario: You want to build a simple command-line tool to help track your weekly budget,
+estimate remaining funds, and check your savings goals using only variables, arithmetic
+operators, type casting, and input().
+Project Requirements:
+1. User Profile Setup: Ask the user for their name and monthly income (store as a float).
+2. Expense Logging: Prompt the user to enter their estimated monthly expenses for three
+categories:
+○ Rent / Housing
+○ Groceries
+○ Utilities & Bills
+3. Calculations:
+○ Calculate the Total Monthly Expenses by summing the three categories.
+○ Calculate the Remaining Savings (Income minus Total Expenses).
+○ Calculate the Percentage of Income Saved (Savings divided by Income,
+multiplied by 100).
+4. Boolean Checks: Create variables using comparison operators to check:
+○ Are total expenses greater than 50% of the income? (True / False)
+○ Is the remaining savings greater than 20,000? (True / False)
+5. Output Dashboard: Print a clean summary displaying the user's name, total expenses,
+remaining savings, savings percentage, and the comparison checks.
+.
+code:
+print( "Welcome dear user, it is great to meet you. Answer the following questions one by one to complete introduction")
+name= input("Question 1: What is your name? : ")
+income= float(input("Question 1: What is your income? : "))
+print( "Now we have to calculate your monthly expenses, Rent, Groceries, and bills")
+rent = float(input("Enter your rent: "))
+groceries = float(input("Enter your groceries amounts: "))
+bills = float(input("Enter your monthly bills: "))
+total_expense = rent + groceries + bills
+savings = income - total_expense
+incomesaved = (savings/income) *100
+bool1 = total_expense>income/2
+bool2 = savings>20,000
+print( "So user: ",name,"Your total income is:",income,"While your expense is:",total_expense)
+print("You save:", savings, "Which is ",incomesaved,"% of your total income")
+print("Your total expenses are more than your 50% income? ",bool1)
+print("You are saving up to or more than 20,000 from your income? ", bool2)
